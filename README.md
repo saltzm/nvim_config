@@ -11,3 +11,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ```
 
 Note that it'll complain at you if you don't have cscope installed.
+
+Then when you open neovim do
+
+```
+:PlugInstall
+```
