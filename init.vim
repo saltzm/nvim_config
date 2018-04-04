@@ -1,0 +1,13 @@
+call plug#begin()
+Plug 'sakhnik/nvim-gdb'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'neomake/neomake'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'rhysd/vim-clang-format'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'lyuts/vim-rtags'
+Plug 'saltzm/nvim_config'
+call plug#end()
