@@ -9,6 +9,5 @@ Plug 'rhysd/vim-clang-format'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'lyuts/vim-rtags'
-Plug 'hu/vim-rtags'
 Plug 'saltzm/nvim_config'
 call plug#end()
