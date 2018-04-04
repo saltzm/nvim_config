@@ -1,5 +1,5 @@
 call plug#begin()
-"Plug 'sakhnik/nvim-gdb'
+Plug 'sakhnik/nvim-gdb'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
@@ -10,6 +10,5 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'lyuts/vim-rtags'
 Plug 'hu/vim-rtags'
-Plug 'huawenyu/neogdb.vim'
 Plug 'saltzm/nvim_config'
 call plug#end()
