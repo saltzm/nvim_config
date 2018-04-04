@@ -9,3 +9,5 @@ curl -fLo ~/.config/nvim/colors/monokai.vim --create-dirs \
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
+Note that it'll complain at you if you don't have cscope installed.
