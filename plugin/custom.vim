@@ -27,7 +27,10 @@ set statusline+=%*
 "            \ 'args': ['-I/path/to/include/dir']
 "            \ }
 
-let g:neomake_cpp_enabled_makers=['clang', 'linter'] ", 'tidy']
+let g:neomake_cpp_enabled_makers=['remote', 'linter'] " 'clang', , 'tidy']
+let g:neomake_cpp_remote_maker = {
+            \ 'exe' : 'rsyncm'
+            \ }
 let g:neomake_cpp_clang_maker = {
             \ 'exe' : 'clang-check',
             \ 'args': [@%, '-extra-arg', '-fno-modules', '-p', '/Users/matthewsaltz/code/mongo/']
