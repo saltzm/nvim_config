@@ -32,7 +32,7 @@ let g:neomake_cpp_remote_maker = {
             \ 'exe' : 'rsyncm'
             \ }
 let g:neomake_cpp_clang_maker = {
-            \ 'exe' : 'clang',
+            \ 'exe' : 'clang-check',
             \ 'args': [@%, '-extra-arg', '-fno-modules', '-p', '/Users/matthewsaltz/code/mongo/']
             \ }
 let g:neomake_cpp_linter_maker = {
