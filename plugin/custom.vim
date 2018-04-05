@@ -27,7 +27,7 @@ set statusline+=%*
 "            \ 'args': ['-I/path/to/include/dir']
 "            \ }
 
-let g:neomake_cpp_enabled_makers=['remote', 'linter'] " 'clang', , 'tidy']
+let g:neomake_cpp_enabled_makers=['clang', 'linter'] " , , 'tidy']
 let g:neomake_cpp_remote_maker = {
             \ 'exe' : 'rsyncm'
             \ }
