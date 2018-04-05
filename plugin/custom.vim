@@ -27,7 +27,7 @@ set statusline+=%*
 "            \ 'args': ['-I/path/to/include/dir']
 "            \ }
 
-let g:neomake_cpp_enabled_makers=['clang', 'linter'] " , , 'tidy']
+let g:neomake_cpp_enabled_makers=['tidy']
 let g:neomake_cpp_remote_maker = {
             \ 'exe' : 'rsyncm'
             \ }
@@ -39,6 +39,9 @@ let g:neomake_cpp_linter_maker = {
             \ 'exe' : 'python',
             \ 'args': ['buildscripts/lint.py']
             \ }
+
+" full options
+" \ 'args': ['-p', '.', '-checks=-*,clang-analyzer-*,-clang-analyzer-cplusplus*,bugprone-*,cert-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-']
 let g:neomake_cpp_tidy_maker = {
             \ 'exe' : 'clang-tidy',
             \ 'args': ['-p', '.', '-checks=-*,clang-analyzer-*,-clang-analyzer-cplusplus*,bugprone-*,cert-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-']
@@ -49,6 +52,13 @@ let g:neomake_javascript_eslint_maker = {
             \ 'args': ['buildscripts/eslint.py', 'lint']
             \ }
 
+" YCM
+" Note: ctrl-O to go back to where you jumped, ctrl-I to jump forward :h jumplist
+"let g:ycm_goto_buffer_command = 'vertical-split'
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+nnoremap <leader>jj :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>jf :YcmCompleter FixIt<CR>
 
 
 let g:ctrlp_map = '<c-p>'

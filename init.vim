@@ -17,7 +17,7 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'rhysd/vim-clang-format'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-"Plug 'lyuts/vim-rtags'
+Plug 'lyuts/vim-rtags'
 Plug 'neomake/neomake'
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'saltzm/nvim_config'
