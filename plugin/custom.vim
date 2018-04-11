@@ -60,8 +60,8 @@ nnoremap <leader>jj :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>jf :YcmCompleter FixIt<CR>
 
-nnoremap <2-LeftMouse> :call rtags#JumpTo(g:SAME_WINDOW)<CR>
-nnoremap <S-LeftMouse> :call rtags#FindRefs()<CR>
+nnoremap <S-LeftMouse> :call rtags#JumpTo(g:SAME_WINDOW)<CR>
+nnoremap <S-RightMouse> :call rtags#FindRefs()<CR>
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
