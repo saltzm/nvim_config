@@ -10,7 +10,6 @@ endfunction
 
 call plug#begin()
 "Plug 'sakhnik/nvim-gdb'
-Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jlanzarotta/bufexplorer'
