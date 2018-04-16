@@ -21,4 +21,7 @@ Plug 'lyuts/vim-rtags'
 Plug 'neomake/neomake'
 Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 Plug 'saltzm/nvim_config'
+Plug 'wincent/command-t', {
+    \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
+    \ }
 call plug#end()
