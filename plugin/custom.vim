@@ -75,7 +75,7 @@ nmap <F8> :TagbarToggle<CR>
 let g:clang_format#command='/Users/matthewsaltz/code/mongo/build/clang-format-3.8.0'
 let g:clang_format#detect_style_file = 1
 "let g:clang_format#auto_format_on_insert_leave = 1
-"let g:clang_format#auto_format = 1
+let g:clang_format#auto_format = 1
 
 """" rtags
 let g:rtagsAutoLaunchRdm=1
