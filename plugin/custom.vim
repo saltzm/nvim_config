@@ -6,6 +6,14 @@ syntax on
 filetype plugin indent on
 set mouse=a
 
+" Tab navigation like Firefox.
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-Left> <Esc>:tabprevious<CR>i
+inoremap <C-Right>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>
+
 " ctags -R --c++-kinds=+p --fields=+iaS --extra=+q --exclude={*.sql,*.py,*.pl,*.html}
 
 au BufNewFile,BufReadPre *.py.dna :let b:ribosome_syntax = "python"
