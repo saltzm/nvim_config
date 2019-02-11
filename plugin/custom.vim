@@ -68,6 +68,9 @@ nnoremap <leader>jj :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>jf :YcmCompleter FixIt<CR>
 
+nnoremap <leader>fm :FZF src/mongo<CR>
+nnoremap <leader>fj :FZF jstests<CR>
+
 nnoremap <S-LeftMouse> :call rtags#JumpTo(g:SAME_WINDOW)<CR>
 nnoremap <S-RightMouse> :call rtags#FindRefs()<CR>
 
