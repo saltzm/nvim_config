@@ -25,5 +25,14 @@ Plug 'saltzm/nvim_config'
 "    \ }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'majutsushi/tagbar'
-Plug 'luchermitte/lh-cpp'
+Plug 'LucHermitte/lh-vim-lib'
+Plug 'LucHermitte/lh-style'
+Plug 'LucHermitte/lh-tags'
+Plug 'LucHermitte/lh-dev'
+Plug 'LucHermitte/lh-brackets'
+Plug 'LucHermitte/searchInRuntime'
+Plug 'LucHermitte/mu-template'
+Plug 'tomtom/stakeholders_vim'
+Plug 'LucHermitte/alternate-lite'
+Plug 'LucHermitte/lh-cpp'
 call plug#end()
