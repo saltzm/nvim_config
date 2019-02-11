@@ -24,6 +24,7 @@ Plug 'saltzm/nvim_config'
 "    \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
 "    \ }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'universal-ctags/ctags'
 Plug 'majutsushi/tagbar'
 Plug 'LucHermitte/lh-vim-lib'
 Plug 'LucHermitte/lh-style'
