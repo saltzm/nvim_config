@@ -1,6 +1,6 @@
 
-let g:nvimgdb_key_frameup = '<c-u>'
-let g:nvimgdb_key_framedown = '<c-d>'
+"let g:nvimgdb_key_frameup = '<c-u>'
+"let g:nvimgdb_key_framedown = '<c-d>'
 
 syntax on
 filetype plugin indent on
@@ -21,8 +21,6 @@ au BufNewFile,BufReadPre *.js.dna :let b:ribosome_syntax = "javascript"
 au BufNewFile,BufReadPre *.rb.dna :let b:ribosome_syntax = "ruby"
 au BufNewFile,BufRead *.dna setf ribosome
 
-autocmd! BufWritePost,BufEnter * Neomake
-
 autocmd FileType r setlocal shiftwidth=2 tabstop=2 tw=79 formatoptions+=t 
 autocmd FileType *.tt setlocal shiftwidth=2 tabstop=2 tw=79 formatoptions+=t syntax=r
 
@@ -35,30 +33,30 @@ set statusline+=%*
 "            \ 'args': ['-I/path/to/include/dir']
 "            \ }
 
-let g:neomake_cpp_enabled_makers=['tidy']
-let g:neomake_cpp_remote_maker = {
-            \ 'exe' : 'rsyncm'
-            \ }
-let g:neomake_cpp_clang_maker = {
-            \ 'exe' : 'clang-check',
-            \ 'args': [@%, '-extra-arg', '-fno-modules', '-p', '/Users/matthewsaltz/code/mongo/']
-            \ }
-let g:neomake_cpp_linter_maker = {
-            \ 'exe' : 'python',
-            \ 'args': ['buildscripts/lint.py']
-            \ }
+"let g:neomake_cpp_enabled_makers=['tidy']
+"let g:neomake_cpp_remote_maker = {
+"            \ 'exe' : 'rsyncm'
+"            \ }
+"let g:neomake_cpp_clang_maker = {
+"            \ 'exe' : 'clang-check',
+"            \ 'args': [@%, '-extra-arg', '-fno-modules', '-p', '/Users/matthewsaltz/code/mongo/']
+"            \ }
+"let g:neomake_cpp_linter_maker = {
+"            \ 'exe' : 'python',
+"            \ 'args': ['buildscripts/lint.py']
+"            \ }
 
 " full options
 " \ 'args': ['-p', '.', '-checks=-*,clang-analyzer-*,-clang-analyzer-cplusplus*,bugprone-*,cert-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-']
-let g:neomake_cpp_tidy_maker = {
-            \ 'exe' : 'clang-tidy',
-            \ 'args': ['-p', '.', '-checks=-*,clang-analyzer-*,-clang-analyzer-cplusplus*,bugprone-*,cert-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-']
-            \ }
-
-let g:neomake_javascript_eslint_maker = {
-            \ 'exe' : 'python',
-            \ 'args': ['buildscripts/eslint.py', 'lint']
-            \ }
+"let g:neomake_cpp_tidy_maker = {
+"            \ 'exe' : 'clang-tidy',
+"            \ 'args': ['-p', '.', '-checks=-*,clang-analyzer-*,-clang-analyzer-cplusplus*,bugprone-*,cert-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-']
+"            \ }
+"
+"let g:neomake_javascript_eslint_maker = {
+"            \ 'exe' : 'python',
+"            \ 'args': ['buildscripts/eslint.py', 'lint']
+"            \ }
 
 " YCM
 " Note: ctrl-O to go back to where you jumped, ctrl-I to jump forward :h jumplist
@@ -83,10 +81,10 @@ nmap <F8> :TagbarToggle<CR>
 
 """" clang format
 "let g:clang_format_path='./build'
-let g:clang_format#command='/Users/matthewsaltz/code/mongo/build/clang-format-3.8.0'
-let g:clang_format#detect_style_file = 1
+"let g:clang_format#command='/Users/matthewsaltz/code/mongo/build/clang-format-3.8.0'
+"let g:clang_format#detect_style_file = 1
 "let g:clang_format#auto_format_on_insert_leave = 1
-let g:clang_format#auto_format = 1
+"let g:clang_format#auto_format = 1
 
 """" rtags
 let g:rtagsAutoLaunchRdm=1
@@ -173,7 +171,7 @@ nmap <C-@><C-@>f :vert scs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-@><C-@>i :vert scs find i ^<C-R>=expand("<cfile>")<CR>$<CR>	
 nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
-cs add $PWD/cscope.out
+" cs add $PWD/cscope.out
 
 "colorscheme ir_black
 colorscheme monokai
